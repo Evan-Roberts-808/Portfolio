@@ -1,0 +1,312 @@
+@font-face {
+	font-family: Pokemon;
+	src: url(PKMNRSEU.ttf);
+}
+
+html {
+	overflow: hidden;
+}
+
+input[type=button] {
+	font-family: Pokemon;
+	font-size: 20px;
+	color: #000;
+	border-radius: 5px;
+	border: 6px #736886 solid;
+	width: 150px;
+	height: 60px;
+}
+
+input[type=button]:hover {
+	cursor: pointer;
+}
+
+#stage {
+    background-color: #cccccc;
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    z-index: 0;
+}
+
+.landscape {
+	width: 100vw;
+	height: 90vh;
+}
+
+.lapras {
+	height:50px;
+    width:50px;
+}
+
+.lapras-translate {
+	position:absolute;
+    left:0vw;
+    top:62vh;
+	animation: lapras-translate 60s linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    -webkit-animation: lapras-translate 60s linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes lapras-translate {
+	0% {
+		transform: translateX(0vw);
+	}
+	50% {
+		transform: translateX(95vw);
+	}
+	51% {
+		transform: translateX(95vw) scaleX(-1);
+	}
+	99% {
+		transform: translateX(0vw) scaleX(-1);
+	}	
+	100% {
+		transform: translateX(0vw);
+	}
+}
+
+@-webkit-keyframes lapras-translate {
+	0% {
+		transform: translateX(0vw);
+	}
+	50% {
+		transform: translateX(95vw);
+	}
+	51% {
+		transform: translateX(95vw) scaleX(-1);
+	}
+	99% {
+		transform: translateX(0vw) scaleX(-1);
+	}	
+	100% {
+		transform: translateX(0vw);
+	}
+}
+.drifblim {
+	height: 200px;
+	width: 200px;
+}
+
+.drifblim-translate {
+	position:absolute;
+    left:0vw;
+    top:5vh;
+	animation: drifblim-translate 45s linear, drifblim-Y-translate;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    -webkit-animation: drifblim-translate 45s linear, drifblim-Y-translate;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes drifblim-translate {
+	0% {
+		transform: translateX(90vw) translateY(0vh) scaleX(-1);
+	}
+	10% {
+		transform: translateX(72vw) translateY(5vh) scaleX(-1);
+	}
+	20% {
+		transform: translateX(54vw) translateY(0vh) scaleX(-1);
+	}
+	30% {
+		transform: translateX(36vw) translateY(5vh) scaleX(-1);
+	}
+	40% { 
+		transform: translateX(18vw) translateY(0vh) scaleX(-1);
+	}
+	50% {
+		transform: translateX(0vw) translateY(5vh) scaleX(-1);
+	}
+	51% {
+		transform: translateX(0vw) translateY(5vh) scaleX(1);
+	}
+	60% {
+		transform: translateX(18vw) translateY(0vh) scaleX(1);
+	}
+	70% {
+		transform: translateX(36vw) translateY(5vh) scaleX(1);
+	}
+	80% {
+		transform: translateX(54vw) translateY(0vh) scaleX(1);
+	}
+	90% {
+		transform: translateX(72vw) translateY(5vh) scaleX(1);
+	}
+	99% {
+		transform: translateX(90vw) translateY(0vh) scaleX(1);
+	}	
+	100% {
+		transform: translateX(90vw) scaleX(-1);
+	}
+}
+
+@-webkit-keyframes drifblim-translate {
+	0% {
+		transform: translateX(90vw) translateY(0vh) scaleX(-1);
+	}
+	10% {
+		transform: translateX(72vw) translateY(5vh) scaleX(-1);
+	}
+	20% {
+		transform: translateX(54vw) translateY(0vh) scaleX(-1);
+	}
+	30% {
+		transform: translateX(36vw) translateY(5vh) scaleX(-1);
+	}
+	40% { 
+		transform: translateX(18vw) translateY(0vh) scaleX(-1);
+	}
+	50% {
+		transform: translateX(0vw) translateY(5vh) scaleX(-1);
+	}
+	51% {
+		transform: translateX(0vw) translateY(5vh) scaleX(1);
+	}
+	60% {
+		transform: translateX(18vw) translateY(0vh) scaleX(1);
+	}
+	70% {
+		transform: translateX(36vw) translateY(5vh) scaleX(1);
+	}
+	80% {
+		transform: translateX(54vw) translateY(0vh) scaleX(1);
+	}
+	90% {
+		transform: translateX(72vw) translateY(5vh) scaleX(1);
+	}
+	99% {
+		transform: translateX(90vw) translateY(0vh) scaleX(1);
+	}	
+	100% {
+		transform: translateX(90vw) scaleX(-1);
+	}
+}
+
+.drifloon {
+	height: 200px;
+	width: 200px;
+}
+
+.drifloon-translate {
+	position:absolute;
+    left:5vw;
+    top:8vh;
+	animation: drifloon-translate 45s linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    -webkit-animation: drifloon-translate 45s linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes drifloon-translate {
+	0% {
+		transform: translateX(90vw) translateY(5vh) scaleX(-1);
+	}
+	10% {
+		transform: translateX(72vw) translateY(0vh) scaleX(-1);
+	}
+	20% {
+		transform: translateX(54vw) translateY(5vh) scaleX(-1);
+	}
+	30% {
+		transform: translateX(36vw) translateY(0vh) scaleX(-1);
+	}
+	40% { 
+		transform: translateX(18vw) translateY(5vh) scaleX(-1);
+	}
+	50% {
+		transform: translateX(0vw) translateY(0vh) scaleX(-1);
+	}
+	51% {
+		transform: translateX(0vw) translateY(0vh) scaleX(1);
+	}
+	60% {
+		transform: translateX(18vw) translateY(5vh) scaleX(1);
+	}
+	70% {
+		transform: translateX(36vw) translateY(0vh) scaleX(1);
+	}
+	80% {
+		transform: translateX(54vw) translateY(5vh) scaleX(1);
+	}
+	90% {
+		transform: translateX(72vw) translateY(0vh) scaleX(1);
+	}
+	99% {
+		transform: translateX(90vw) translateY(5vh) scaleX(1);
+	}	
+	100% {
+		transform: translateX(90vw) scaleX(-1);
+	}
+}
+
+@-webkit-keyframes drifloon-translate {
+	0% {
+		transform: translateX(90vw) translateY(5vh) scaleX(-1);
+	}
+	10% {
+		transform: translateX(72vw) translateY(0vh) scaleX(-1);
+	}
+	20% {
+		transform: translateX(54vw) translateY(5vh) scaleX(-1);
+	}
+	30% {
+		transform: translateX(36vw) translateY(0vh) scaleX(-1);
+	}
+	40% { 
+		transform: translateX(18vw) translateY(5vh) scaleX(-1);
+	}
+	50% {
+		transform: translateX(0vw) translateY(0vh) scaleX(-1);
+	}
+	51% {
+		transform: translateX(0vw) translateY(0vh) scaleX(1);
+	}
+	60% {
+		transform: translateX(18vw) translateY(5vh) scaleX(1);
+	}
+	70% {
+		transform: translateX(36vw) translateY(0vh) scaleX(1);
+	}
+	80% {
+		transform: translateX(54vw) translateY(5vh) scaleX(1);
+	}
+	90% {
+		transform: translateX(72vw) translateY(0vh) scaleX(1);
+	}
+	99% {
+		transform: translateX(90vw) translateY(5vh) scaleX(1);
+	}	
+	100% {
+		transform: translateX(90vw) scaleX(-1);
+	}
+}
+
+.character {
+    /*
+     * Very important that we set the height and width of 
+     * our characters to the height and width of the sprites
+     */
+    height:150px;
+    width:120px;
+    /*
+     * We need to position them absolutely so we can have full  
+     * control over their position within the stage
+     */
+    position:absolute;
+    left:45vw;
+    top:60vh;
+}
+ 
+#j {
+    /*
+     * And now we set the background image for the character div 
+     * to be the first sprite (in the upper left corner)
+     */
+    background-image: url('img/j.png');
+    background-repeat:no-repeat;
+    background-position:0 0;
+}

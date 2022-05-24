@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pok&eacutemon Adventure</title>
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="stage">
+	  <img class="landscape" src="img/Background.png" />
+	  <div class="lapras-translate">
+	  	  <img class="lapras" src="img/Lapras.png" />
+	  </div>
+	  <div class="drifblim-translate">
+	  	  <img class="drifblim" src="img/Drifblim.png" />
+	  </div>	  
+	  <div class="drifloon-translate">
+	  	  <img class="drifloon" src="img/Drifloon.png" />
+	  </div>	  
+      <div id="j" class="character"></div>
+    </div>
+    <table>
+      <tr>
+        <td>
+          <input type="button" value="Run Left" onclick="j.run_left();" />
+        </td>
+        <td>
+          <input type="button" value="Stop Running" onclick="j.stop_running();" />
+        </td>
+        <td>
+          <input type="button" value="Run Right" onclick="j.run_right();" />
+        </td>
+        <td>
+          <input type="button" value="Jump" onclick="j.jump();" />
+        </td>
+		<td>
+<audio controls autoplay>
+  <source src="music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+		</td>
+      </tr>
+    </table>
+    <script src="index.js"></script>	
+  </body>
+</html>
