@@ -74,7 +74,7 @@ h5 {
 
 }
 .btn.btn-invert:hover {
-    background-color: #252525;
+    background-color: #8dd7f7;
     border: 1px solid #252525;
     color: #fff;
 }
@@ -216,8 +216,7 @@ Header Text
 ===========*/
 
 #hero-text {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 50px;
     text-align: center;
     margin-bottom: 0;
 }
@@ -228,11 +227,6 @@ Header Text
     font-weight: 900;
 }
 
-#hero-text h5 {
-    margin-top: 0;
-    letter-spacing: 6px;
-    color: #696969;
-}
 
 /*==========
 Home Gallery
