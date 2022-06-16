@@ -1,6 +1,10 @@
 /*===========
 Global Styles
 =============*/
+.spacing {
+    padding-top: 100px;
+}
+
 body {
     font-family: 'Archivo', serif;
 }
@@ -467,10 +471,25 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.1), inset 0px 0px 20px rgba(0,0,0,0.
 /*============
 About Me Page
 =============*/
+
+.center {
+    margin: 0 auto;
+}
+
 .my-name {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 20px;
+}
+
+.about-me img {
+    border-radius: 300px;
+    width: 75%;
+}
+
+.about-me h2 {
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 .about-me p {
@@ -515,6 +534,11 @@ Contact Page
 .contact form .btn-lg {
 display: block;    
 margin: 0 auto;
+}
+
+.contact form .btn-lg:hover {
+    background-color: #8dd7f7;
+    color: #fff;
 }
 
 .contact-info {
